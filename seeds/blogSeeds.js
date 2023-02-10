@@ -8,11 +8,11 @@ const data = [
     },
     {
         title: "Test 2",
-        content: "Comment 2.",
+        content: "Content 2.",
         user_id: 2
     }
 ];
 
-const blog = () => blog.bulkCreate(data);
+const blogs = () => blog.bulkCreate(data);
 
-module.exports = blog;
+module.exports = blogs;

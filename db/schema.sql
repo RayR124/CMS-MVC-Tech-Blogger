@@ -1,3 +1,4 @@
+-- Active: 1675282677433@@127.0.0.1@3306@cms_mvc_tech_blogger
 DROP DATABASE IF EXISTS CMS_MVC_Tech_Blogger;
 
 CREATE DATABASE CMS_MVC_Tech_Blogger;
