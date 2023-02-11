@@ -1,0 +1,92 @@
+<div style="text-align:center">
+    <button class="trigger">Login or Create an account</button>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <button class="loginButton" onclick="showLogin()">Login</button>
+            <button class="signUpButton" onclick="showSignUp()">Sign Up</button>
+        </div>
+    </div>
+</div>
+
+<!--Login Modal-->
+<div class="Login-Modal hidden">
+    <div id="Login Modal" class="loginModal">
+        <form class="modal-content" id="login_form">
+            <span class="login-close-button">&times;</span>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" id="login-username" required>
+            <div>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="login-password" required>
+            </div>
+
+            <div id="login_errors"></div>
+
+            <button type="Login" id="login-form-button" class="login-form-button">Login</button>
+            <label>
+                <div class="RemMe">
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </div>
+            </label>
+            <div>
+                <label>
+                    <div class="NoAccount">Don't have an Account? Click <a href="#">Here</a> to Sign Up!
+                </label>
+            </div>
+    </div>
+    <div class="ForgotPsw">
+        <span class="psw"> <a href="#">Forgot Password?</a></span>
+    </div>
+    </form>
+</div>
+</div>
+
+<!--Sign Up Modal Section-->
+<div class="signUp hidden">
+    <div id="SignUp Modal" class="signUpModal">
+        <form class="modal-content" id="signup_form">
+            <span class="signup-close-button">&times;</span>
+            <div>
+                <label for="email"><b>Email</b></label>
+                <input type="email" id="sign-up-email" name="email" placeholder="Enter Email address" required>
+            </div>
+            <div>
+                <label for="Firstname"><b>First Name</b></label>
+                <input type="text" placeholder="First Name" id="sign-up-first-name" name="Firstname" required>
+            </div>
+            <div>
+                <label for="Lastname"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter Last Name" id="sign-up-last-name" name="Lastname" required>
+            </div>
+            <div>
+                <label for="uname"><b>Create a Username</b></label>
+                <input type="text" placeholder="Create Username" name="uname" id="sign-up-username" required>
+            </div>
+            <div>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="sign-up-password" required>
+            </div>
+
+            <div id="signup_errors"></div>
+
+            <div class="signUpBtn">
+                <button type="Signup" id="signup-form-button" class="signup-form-button">Sign Up</button>
+            </div>
+            <label>
+                <div class="RemMe">
+                    <input type="checkbox" checked="checked" name="remember"> Remember me for future visits.
+                </div>
+            </label>
+        </form>
+    </div>
+</div>
+
+<div class="card">
+    <div>
+        <h1 class="search-title" style="text-align: center;">Welcome to CodeWise! A place for Coders to blog about
+            coding.</h1>
+    </div>
+</div>
+
+</script>
