@@ -85,10 +85,10 @@ body {
     padding: 1rem 1.5rem;
     width: 24rem;
     border-radius: 0.5rem;
-    background: #1C6EA4;
-    background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 65%, #144E75 100%);
-    background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 65%, #144E75 100%);
-    background: linear-gradient(to right, #1C6EA4 0%, #2388CB 65%, #144E75 100%);
+    background: rgb(165, 6 ,6);
+    background: -moz-linear-gradient(left, rgb(193, 2, 2) 0%, rgb(132, 2, 2) 65%, rgb(81, 1, 1) 100%);
+    background: -webkit-linear-gradient(left, rgb(193, 2, 2) 0%, rgb(132, 2, 2) 65%, rgb(81, 1, 1) 100%);
+    background: linear-gradient(to right, rgb(193, 2, 2) 0%, rgb(132, 2, 2) 65%, rgb(81, 1, 1) 100%);
 }
 
 .close-button {
@@ -155,19 +155,19 @@ body {
     font-style: normal;
     font-variant: normal;
     text-transform: none;
-    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+    background-image: linear-gradient(to right, rgb(193, 2, 2) 0%, rgb(132, 2, 2) 65%, rgb(81, 1, 1) 100%);
     box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
-    border: 2px solid rgb(28, 110, 164);
+    border: 2px solid rgb(165, 6 ,6);
     display: inline-block;
 }
 
 .trigger:hover {
-    background: #1C6EA4;
+    background: rgb(132, 2, 2);
     cursor: pointer;
 }
 
 .trigger:active {
-    background: #144E75;
+    background: rgb(165, 6 ,6);
 }
 
 .loginButton {
@@ -182,20 +182,20 @@ body {
     font-style: normal;
     font-variant: normal;
     text-transform: none;
-    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+    background-image: linear-gradient(to right, rgb(193, 2, 2) 0%, rgb(132, 2, 2) 65%, rgb(81, 1, 1) 100%);
     box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
-    border: 2px solid rgb(28, 110, 164);
+    border: 2px solid rgb(165, 6 ,6);
     display: inline-block;
     margin: 10px;
 }
 
 .loginButton:hover {
-    background: #1C6EA4;
+    background: rgb(132, 2, 2);
     cursor: pointer;
 }
 
 .loginButton:active {
-    background: #144E75;
+    background: rgb(165, 6 ,6);
 }
 
 .signUpButton {
@@ -210,20 +210,20 @@ body {
     font-style: normal;
     font-variant: normal;
     text-transform: none;
-    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+    background-image: linear-gradient(to right, rgb(165, 6 ,6) 0%, 0%, rgb(132, 2, 2) 65%, rgb(81, 1, 1) 100%);
     box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
-    border: 2px solid rgb(28, 110, 164);
+    border: 2px solid rgb(165, 6 ,6);
     display: inline-block;
     margin: 10px;
 }
 
 .signUpButton:hover {
-    background: #1C6EA4;
+    background: rgb(132, 2, 2);
     cursor: pointer;
 }
 
 .signUpButton:active {
-    background: #144E75;
+    background: rgb(165, 6 ,6);
 }
 
 /*Login Modal Pop-over Section*/
@@ -291,20 +291,20 @@ body {
     font-style: normal;
     font-variant: normal;
     text-transform: none;
-    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+    background-image: linear-gradient(to right, rgb(165, 6 ,6) 0%, 0%, rgb(132, 2, 2) 65%, rgb(81, 1, 1) 100%);
     box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
-    border: 2px solid rgb(28, 110, 164);
+    border: 2px solid rgb(165, 6 ,6);
     display: inline-block;
     margin: 10px;
 }
 
 .login-form-button:hover {
-    background: #1C6EA4;
+    background: rgb(132, 2, 2);
     cursor: pointer;
 }
 
 .login-form-button:active {
-    background: #144E75;
+    background: rgb(165, 6 ,6);
 }
 
 .signup-form-button {
@@ -319,18 +319,18 @@ body {
     font-style: normal;
     font-variant: normal;
     text-transform: none;
-    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+    background-image: linear-gradient(to right, rgb(165, 6 ,6) 0%, 0%, rgb(132, 2, 2) 65%, rgb(81, 1, 1) 100%);
     box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
-    border: 2px solid rgb(28, 110, 164);
+    border: 2px solid rgb(165, 6 ,6);
     display: inline-block;
     margin: 10px;
 }
 
 .signup-form-button:hover {
-    background: #1C6EA4;
+    background: rgb(132, 2, 2);
     cursor: pointer;
 }
 
 .signup-form-button:active {
-    background: #144E75;
+    background: rgb(165, 6 ,6);
 }
