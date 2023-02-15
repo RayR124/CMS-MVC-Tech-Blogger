@@ -8,6 +8,7 @@ const resultsModal = document.querySelector(".resultsModal");
 
 //turns on login/signup modal
 function toggleModal() {
+    console.log("clicked");
     modal.classList.toggle("show-modal");
 }
 //turns off modal when clicked outside of modal

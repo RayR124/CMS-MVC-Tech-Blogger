@@ -16,7 +16,9 @@ app.use(express.static('public'));
 
 app.engine('handlebars', engine({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
-
+app.get("/tacos", (req, res) =>{
+  res.render("blog")
+  })
 app.get('/', (req, res) => {
   res.render('home');
 });
