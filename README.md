@@ -20,8 +20,8 @@
 
 ## Usage
 
-- Simply clone my GitHub Repository at [THIS PAGE](https://github.com/RayR124/CMS-MVC-Tech-Blogger) and make sure to have node, MySQL, and Sequelize on your system. This was made with Insomnia, but any other like-software will work just fine.
-
+- Simply clone my GitHub Repository at [THIS PAGE](https://github.com/RayR124/CMS-MVC-Tech-Blogger) and make sure to do an npm install before initializing the server on node or nodemon.
+ 
 - You can visit [HERE](https://codewise.herokuapp.com/) to see the deployed app in action.
 
 ## Credits
