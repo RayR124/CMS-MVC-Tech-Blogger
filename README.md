@@ -1,4 +1,4 @@
-# CMS-MVC-Tech-Blogger (CodeWise)
+# CMS-MVC-Tech-Blogger (```CodeWise```)
  - Model, View, and Controller assignment on the back-end for challenge 14 on my Full Stack Bootcamp at UC Berkeley.
 
 ![MIT](https://img.shields.io/bower/l/MI?label=License&style=plastic)
@@ -94,7 +94,8 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 Here is the link to my GitHub Repository: https://github.com/RayR124
 
-For additonal questions or comments, please email me at : RealtorRayR@Gmail.com
+For additonal questions or comments:
+```please email me at : RealtorRayR@Gmail.com```
 
 ## Tests
 
