@@ -21,11 +21,11 @@ router.get('/:id', (req, res) => {
         include: [
             {
                 model: Post,
-                attributes: ['id', 'title', 'post_text', 'created_at']
+                attributes: ['id', 'title', 'content', 'created_by']
             },
             {
                 model: Comment,
-                attributes: ['id', 'comment_text', 'created_at'],
+                attributes: ['id', 'comment_text', 'created_by'],
                 include: {
                     model: Post,
                     attributes: ['title', 'post_id']
@@ -34,7 +34,7 @@ router.get('/:id', (req, res) => {
         ]
     }).then(UserData => {
         if (!UserData) {
-            res.status(404).json({ message: 'No user found.' });
+            res.status(404).json({ message: 'That user might not exist... yet!' });
             return;
         }
         res.json(UserData);
@@ -69,14 +69,14 @@ router.post('/login', (req, res) => {
         }
     }).then(UserData => {
         if (!UserData) {
-            res.status(400).json({ message: 'No user found matching that email address!' });
+            res.status(400).json({ message: 'That user might not exist... yet!' });
             return;
         }
 
         const validPassword = UserData.checkPassword(req.body.password);
 
         if (!validPassword) {
-            res.status(400).json({ message: 'Incorrect password!' });
+            res.status(400).json({ message: "Your password's gotta match, yo!" });
             return;
         }
 
@@ -84,14 +84,14 @@ router.post('/login', (req, res) => {
             req.session.user_id = UserData.id;
             req.session.username = UserData.username;
             req.session.loggedIn = true;
-            res.json({ user: UserData, message: 'Logged in successfully!' });
+            res.json({ user: UserData, message: 'You did it! You logged in!' });
         });
     });
 });
 
 router.post('/logout', (req, res) => {
     if (req.session.loggedIn) {
-        res.json({ user: UserData, message: 'Bye Bye!' });
+        res.json({ user: UserData, message: 'Bye Bye! XD' });
         req.session.destroy(() => {
             res.status(404).end();
         });
@@ -109,7 +109,7 @@ router.put('/:id', (req, res) => {
         }
     }).then(UserData => {
         if (!UserData) {
-            res.status(404).json({ message: 'No user found.' });
+            res.status(404).json({ message: 'That user might not exist... yet!' });
             return;
         }
         res.json(UserData);
@@ -126,7 +126,7 @@ router.delete('/:id', (req, res) => {
         }
     }).then(UserData => {
         if (!UserData) {
-            res.status(404).json({ message: 'No user found.' });
+            res.status(404).json({ message: 'That user might not exist... yet!' });
             return;
         }
         res.json(UserData);

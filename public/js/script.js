@@ -1,4 +1,3 @@
-//modals and buttons
 const modal = document.querySelector(".modal");
 const trigger = document.querySelector(".trigger");
 const closeButton = document.querySelector(".close-button");

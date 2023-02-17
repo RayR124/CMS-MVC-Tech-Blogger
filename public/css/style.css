@@ -338,3 +338,31 @@ body {
 .signup-form-button:active {
     background: rgb(165, 6 ,6);
 }
+
+.newPostBtn {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 18px;
+    padding: 9px;
+    border-radius: 33px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    background-image: linear-gradient(to right, rgb(165, 6 ,6) 0%, 0%, rgb(132, 2, 2) 65%, rgb(81, 1, 1) 100%);
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+    border: 2px solid rgb(165, 6 ,6);
+    display: inline-block;
+    margin: 10px;
+}
+
+.newPostBtn:hover {
+    background: rgb(132, 2, 2);
+    cursor: pointer;
+}
+
+.newPostBtn:active {
+    background: rgb(165, 6 ,6);
+}

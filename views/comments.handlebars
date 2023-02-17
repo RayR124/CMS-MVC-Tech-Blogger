@@ -1,0 +1,23 @@
+<!-- Ability to add a comment, only if logged in -->
+{{#if logged_in}}
+		<form data-blogid={{id}}>
+			<div>
+				<textarea id='commentDescription' name="comment" placeholder="Speak your mind, but do it nicely." cols="50" rows="4">
+                </textarea>
+			</div>
+			<div>
+				<button type="submit">Add a Thought.</button>
+			</div>
+		</form>
+{{/if}}
+
+<!-- Displays all current comments -->
+<h2>Other Users' Thoughts:</h2>
+{{#each comments as |comment|}}
+<div class="commentCont">
+	<p>{{comment.comment_description}}</p>
+	<p>Contributed by {{comment.user.username}}</p>
+</div>
+{{/each}}
+
+<script src="/js/comment.js"></script>

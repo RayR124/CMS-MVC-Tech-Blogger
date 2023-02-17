@@ -1,3 +1,11 @@
+{{#if logged_in}}
+<div>
+    <li>
+        <button class="logoutBtn" id="logout">Logout</button>
+    </li>
+</div>
+{{/if}}
+
 <!--Login Modal-->
 <div class="Login-Modal hidden">
     <div id="Login Modal" class="loginModal">
@@ -15,7 +23,8 @@
             <button type="Login" id="login-form-button" class="login-form-button">Login</button>
             <div>
                 <label>
-                    <p>No Account? Just close this box and click <span style="color: rgb(190, 190, 190);">Sign Up!</span></p>
+                    <p>No Account? Just close this box and click <span style="color: rgb(190, 190, 190);">Sign
+                            Up!</span></p>
                 </label>
             </div>
         </form>
@@ -45,7 +54,9 @@
             </div>
             <div>
                 <label>
-                    <p>Remember to make your username something <span style="color:aqua;">fun</span> and <span style="color:rgb(254, 254, 37);">catchy</span>. This is a space for <span style="color: rgb(190, 190, 190);">CREATIVITY</span>!</p>
+                    <p>Remember to make your username something <span style="color:aqua;">fun</span> and <span
+                            style="color:rgb(254, 254, 37);">catchy</span>. This is a space for <span
+                            style="color: rgb(190, 190, 190);">CREATIVITY</span>!</p>
                 </label>
             </div>
         </form>
@@ -54,8 +65,10 @@
 
 <div class="card">
     <div>
-        <h1 class="cwTitle" style="text-align: center;">Welcome to CodeWise! A place for coders to blog about coding.</h1>
-        <h3 class="cwTitle" style="text-align: center;">(<span style="color: rgb(125, 0, 0);">NOT</span> a place for doctors to complain about coding.)</h3>
+        <h1 class="cwTitle" style="text-align: center;">Welcome to CodeWise! A place for coders to blog about coding.
+        </h1>
+        <h3 class="cwTitle" style="text-align: center;">(<span style="color: rgb(125, 0, 0);">NOT</span> a place for
+            doctors to complain about coding.)</h3>
     </div>
 </div>
 
@@ -70,3 +83,25 @@
     </div>
 </div>
 
+{{#if logged_in}}
+<section>
+    <button class="newPostBtn" type="submit" id="createPost">Create New Blog</button>
+</section>
+{{/if}}
+
+{{#each blog as |blog|}}
+<div>
+    <div>
+        <h1><a href="controllers/api/blog.js/{{blog.id}}">{{blog.title}}</a></h1>
+    </div>
+    <div>
+        <button data-id="{{blog.id}}">DELETE</button>
+    </div>
+</div>
+{{/each}}
+
+<script src="js/script.js"></script>
+
+{{#if logged_in}}
+<script src="/js/logout.js"></script>
+{{/if}}

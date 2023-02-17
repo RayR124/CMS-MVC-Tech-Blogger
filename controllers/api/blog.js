@@ -7,13 +7,13 @@ router.get('/', (req, res) => {
     Post.findAll({
         attributes: [
             'id',
-            'post_text',
             'title',
-            'created_at'],
+            'content',
+            'created_by'],
         include: [
             {
                 model: Comment,
-                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_by'],
                 include: {
                     model: User,
                     attributes: ['username']
@@ -39,14 +39,14 @@ router.get('/:id', (req, res) => {
         },
         attributes: [
             'id',
-            'post_text',
             'title',
-            'created_at',
+            'content',
+            'created_by',
         ],
         include: [
             {
                 model: Comment,
-                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_by'],
                 include: {
                     model: User,
                     attributes: ['username']
@@ -60,7 +60,7 @@ router.get('/:id', (req, res) => {
     })
         .then(PostData => {
             if (!PostData) {
-                res.status(404).json({ message: 'No post found.' });
+                res.status(404).json({ message: 'That post might not exist.' });
                 return;
             }
             res.json(PostData);
@@ -98,7 +98,7 @@ router.put('/:id', (req, res) => {
     )
         .then(PostData => {
             if (!PostData) {
-                res.status(404).json({ message: 'No post found.' });
+                res.status(404).json({ message: 'That post might not exist.' });
                 return;
             }
             res.json(PostData);
@@ -118,7 +118,7 @@ router.delete('/:id', (req, res) => {
     })
         .then(PostData => {
             if (!PostData) {
-                res.status(404).json({ message: 'No post found.' });
+                res.status(404).json({ message: 'That post might not exist.' });
                 return;
             }
             res.json(PostData);

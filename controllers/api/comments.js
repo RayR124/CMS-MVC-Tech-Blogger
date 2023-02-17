@@ -35,7 +35,7 @@ router.delete('/:id', (req, res) => {
     })
         .then(CommentData => {
             if (!CommentData) {
-                res.status(404).json({ message: 'No comment found.' });
+                res.status(404).json({ message: 'That comment might not exist.' });
                 return;
             }
             res.json(CommentData);
