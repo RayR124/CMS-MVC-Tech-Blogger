@@ -1,4 +1,4 @@
-# CMS-MVC-Tech-Blogger
+# CMS-MVC-Tech-Blogger (CodeWise)
  - Model, View, and Controller assignment on the back-end for challenge 14 on my Full Stack Bootcamp at UC Berkeley.
 
 ![MIT](https://img.shields.io/bower/l/MI?label=License&style=plastic)
@@ -10,7 +10,7 @@
 
 - My challenge this week was to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. I built this site completely from scratch and deployed it to Heroku. This app follows the MVC (Model, View, Controller) paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
-- In it, users can visit the website, create an account, log in and out of that account, view blog posts from other users. comment on other users' blogs, and create/delete their own blogs. I appreciate a good sense of humor, so this is a place for writing creatively and expressing yourself as a coder, and maybe even venting some frustrations.
+- In CodeWise, users can visit the website, create an account, log in and out of that account, view blog posts from other users. comment on other users' blogs, and create/delete their own blogs. I appreciate a good sense of humor, so this is a place for writing creatively and expressing yourself as a coder, and maybe even venting some frustrations.
 
 ![screenshot](./public/assets/homescreenshot.png)
 
